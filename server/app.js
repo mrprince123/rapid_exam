@@ -12,6 +12,9 @@ require('./DB/Connnection');
 
 // Here I  will declear all  the  routes
 app.use(require('./routes/About'));
+app.use(require('./routes/Login'));
+app.use(require('./routes/Register'));
+app.use(require('./routes/Contact'));
 
 const PORT = process.env.PORT;
 app.listen(PORT, function(){
