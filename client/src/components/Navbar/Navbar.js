@@ -10,6 +10,9 @@ const Navbar = () => {
 
   return (
     <div className="rapid__navbar">
+
+
+
       <div className="rapid__navbar-links">
         <div className="rapid__navbar-links_logo">
           <img src={logo} />
@@ -20,11 +23,15 @@ const Navbar = () => {
           <p><a href="/courses">Courses</a></p>
           <p><a href="/contact">contact</a></p>
         </div>
+        <div className="rapid__navbar-sign">
+          <p>Login</p>
+          <button type="button">Register</button>
+        </div>
       </div>
-      <div className="rapid__navbar-sign">
-        <p>Login</p>
-        <button type="button">Register</button>
-      </div>
+
+
+
+      {/* This is for the Toggle View */}
       <div className="rapid__navbar-menu">
         {toggleMenu
           ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
@@ -36,15 +43,17 @@ const Navbar = () => {
               <p><a href="#about">About</a></p>
               <p><a href="#courses">Courses</a></p>
               <p><a href="#contact">Contact</a></p>
-            
+
             </div>
             <div className="rapid__navbar-menu_container-links-sign">
               <p>Login</p>
               <button type="button">Register</button>
             </div>
           </div>
-        )}v
+        )}
       </div>
+
+
     </div>
   );
 };
