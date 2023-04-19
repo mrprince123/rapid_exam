@@ -3,14 +3,19 @@ import './home.css';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import people from '../../assets/people.png'
 import home from '../../assets/home.png'
+import { useSpring, animated } from '@react-spring/web'
 const Home = () => {
   const [text] = useTypewriter({
     words: ['Exam.', 'Job.', 'Passing.', 'Excel.'],
     loop: Infinity
   })
+  const springs = useSpring({
+    from: { x: 0 },
+    to: { x: 100 },
+  })
   return (
     <div className='rapid__header section__padding' id='home'>
-      <div className='rapid__header-content'>
+      <animated.div style = {{...springs}}className='rapid__header-content'>
         <h1 className='gradient__text'>
           Learn for <span>{text}</span>
 
@@ -25,7 +30,7 @@ const Home = () => {
         </div>
 
 
-      </div>
+      </animated.div>
       <div className='slide-top slide-bottom rapid__header-image'>
         <img src={home} alt="" />
       </div>
