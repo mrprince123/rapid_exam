@@ -1,9 +1,10 @@
 import React from 'react';
 import './home.css';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-import people from '../../assets/people.png'
 import home from '../../assets/home.png'
 import { useSpring, animated } from '@react-spring/web'
+
+
 const Home = () => {
   const [text] = useTypewriter({
     words: ['Exam.', 'Job.', 'Passing.', 'Excel.'],
@@ -11,7 +12,7 @@ const Home = () => {
   })
   const springs = useSpring({
     from: { x: 0 },
-    to: { x: 100 },
+    to: { x: 80 },
   })
   return (
     <div className='rapid__header section__padding' id='home'>

@@ -2,9 +2,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     padding: 0.6rem 6rem;
-    background-color: #ffe5ec;
+    background-color: red;
 }
 
 
@@ -18,18 +17,18 @@
 .rapid__navbar-links_logo {
     /* margin-right: 6rem; */
     margin-left: 3rem;
+  
 }
 
 .rapid__navbar-links_logo img {
-    width: 62.56px;
-    height: 16.02px;
+    width: 25%;
 }
 
 .rapid__navbar-links_container {
     display: flex;
     flex-direction: row;
-    margin-left: 15rem;
-
+    background-color: yellow;
+    margin-right: 17%;
 }
 
 .rapid__navbar-links_container p a {
@@ -111,6 +110,15 @@
     display: none;
 }
 
+<<<<<<< HEAD
+@media screen and (max-width: 1250px){
+.rapid__navbar-links_container {
+    margin-left: 12%;
+}
+}
+ 
+=======
+>>>>>>> 83a7685af31dbb09f919ea45eddd118879e4b999
 @media screen and (max-width: 1050px) {
     .rapid__navbar-links_container {
         display: none;

@@ -5,6 +5,7 @@
     /* background-color: yellow; */
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 15%;
 }
 .rapid__header-content{
     flex: 1;

@@ -2,6 +2,8 @@ import React from "react";
 import { About, Contact, Courses, Home, Login, Register } from "./containers";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from '../src/components/Footer/Footer'
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
-
+      <Footer />
 
     </Router>
   );
