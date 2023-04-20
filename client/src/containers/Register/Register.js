@@ -2,7 +2,7 @@ import React from 'react';
 import './register.css';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import { axios } from './../../../node_modules/axios/dist/esm/axios';
+import axios from 'axios';
 
 
 
@@ -22,12 +22,12 @@ const Register = () => {
       Password,
       ConfirmPassword
     })
-    .then(()=>{
-      console.log("login successfully");
-    })
-    .catch((err)=>{
-      console.log(`login falied : ${err}`);
-    })
+      .then(() => {
+        console.log("login successfully");
+      })
+      .catch((err) => {
+        console.log(`login falied : ${err}`);
+      })
   }
 
 
@@ -46,7 +46,7 @@ const Register = () => {
           <input type='text' onChange={(e) => setConfirmPassword(e.target.value)} placeholder='Confirm Password' /><br />
           <button onClick={handleLogin}>Register</button>
           <p>or </p>
-          <button onClick={google_Click}>Sign Up With Gooogle</button>
+          <button>Sign Up With Gooogle</button>
           <p>Already Have an account ?<span><NavLink>Login</NavLink></span></p>
 
         </div>
