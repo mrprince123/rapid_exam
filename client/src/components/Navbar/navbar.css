@@ -110,15 +110,12 @@
     display: none;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 1250px){
 .rapid__navbar-links_container {
     margin-left: 12%;
 }
 }
  
-=======
->>>>>>> 83a7685af31dbb09f919ea45eddd118879e4b999
 @media screen and (max-width: 1050px) {
     .rapid__navbar-links_container {
         display: none;
