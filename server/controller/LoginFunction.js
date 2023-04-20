@@ -1,8 +1,8 @@
 const UserModel = require('../models/UserModel');
+const bcrypt = require('bcryptjs');
 
 
-
-const LoginPostFun = async () => {
+const LoginPostFun = async (req, res) => {
     try {
 
         const {Email, Password} = req.body;

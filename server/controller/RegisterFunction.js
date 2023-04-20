@@ -1,18 +1,19 @@
 const UserModel = require('../models/UserModel');
 
 
-const RegisterGetFun = async () => {
+const RegisterGetFun = async (req, res) => {
 
     try {
         const data = await UserModel.find({});
         res.send(data);
+
     } catch (error) {
         console.log("This is the error occure while getting the register Function");
     }
 
 }
 
-const RegisterPostFun = async () => {
+const RegisterPostFun = async (req, res) => {
 
     try {
 
