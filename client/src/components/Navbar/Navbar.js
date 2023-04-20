@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/myLogo.png'
 import './navbar.css';
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
 
       <div className="rapid__navbar-links">
         <div className="rapid__navbar-links_logo">
-          <img src={logo} />
+          <img src={logo} alt='this is the logo' />
         </div>
         <div className="rapid__navbar-links_container">
           <p><a href="/">Home</a></p>
@@ -21,8 +22,8 @@ const Navbar = () => {
           <p><a href="/contact">contact</a></p>
         </div>
         <div className="rapid__navbar-sign">
-          <p>Login</p>
-          <button type="button">Register</button>
+          <NavLink to="/login"><p>Login</p></NavLink>
+          <NavLink to="/register"><button type="button">Register</button></NavLink>
         </div>
       </div>
 
@@ -43,7 +44,7 @@ const Navbar = () => {
 
             </div>
             <div className="rapid__navbar-menu_container-links-sign">
-              <p>Login</p>
+              <NavLink to="/login"><p>Login</p></NavLink>
               <button type="button">Register</button>
             </div>
           </div>
