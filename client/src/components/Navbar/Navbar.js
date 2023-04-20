@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/logo.svg'
-
+import logo from '../../assets/myLogo.png'
 import './navbar.css';
 
 
@@ -10,8 +9,6 @@ const Navbar = () => {
 
   return (
     <div className="rapid__navbar">
-
-
 
       <div className="rapid__navbar-links">
         <div className="rapid__navbar-links_logo">
