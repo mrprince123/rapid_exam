@@ -6,6 +6,7 @@ import axios from 'axios';
 
 
 
+
 const Register = () => {
 
 
@@ -13,21 +14,22 @@ const Register = () => {
   const [Username, setUsername] = useState("");
   const [Email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
-  const [ConfirmPassword, setConfirmPassword] = useState("");
+  const [CPassword, setConfirmPassword] = useState("");
 
-  const handleLogin = () => {
-    axios.post("http://locallhost:5000/register", {
-      Username,
-      Email,
-      Password,
-      ConfirmPassword
+  const handleLogin = async () => {
+    await axios.post("http://localhost:5000/register", {
+      Username: Username,
+      Email: Email,
+      Password: Password,
+      CPassword: CPassword
     })
-      .then(() => {
-        console.log("login successfully");
+      .then((data) => {
+        console.log(data);
       })
       .catch((err) => {
         console.log(`login falied : ${err}`);
       })
+
   }
 
 
@@ -45,9 +47,9 @@ const Register = () => {
           <input type='text' onChange={(e) => setPassword(e.target.value)} placeholder='Password' /><br />
           <input type='text' onChange={(e) => setConfirmPassword(e.target.value)} placeholder='Confirm Password' /><br />
           <button onClick={handleLogin}>Register</button>
-          <p>or </p>
+          <p className='register_form_p'>or </p>
           <button>Sign Up With Gooogle</button>
-          <p>Already Have an account ?<span><NavLink>Login</NavLink></span></p>
+          <p>Already Have an account ?<span><NavLink to="/login">Login</NavLink></span></p>
 
         </div>
       </div>

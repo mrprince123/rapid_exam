@@ -52,8 +52,6 @@
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
-
-
     margin: 0 1rem;
     cursor: pointer;
 }
@@ -96,14 +94,14 @@
     position: absolute;
     right: 0;
     top: 40px;
-    margin-top: 1rem;
-    min-width: 210px;
+    margin-top: 0.5rem; 
+    min-width: 210px; 
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .rapid__navbar-menu_container p {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 .rapid__navbar-menu_container-links-sign {

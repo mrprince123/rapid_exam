@@ -1,7 +1,6 @@
 .register_father {
     display: flex;
     justify-content: center;
-    align-items: center;
     background: orange;
     width: 100%;
 }
@@ -16,10 +15,16 @@
     background-color: pink;
     margin: 10%;
     padding: 20px;
+    border-radius: 20px;
 }
 
 .register_image {
     max-width: 50vw;
+    padding: 20px;
+    width: 100%;
+}
+
+.register_image img{
     width: 100%;
 }
 
@@ -28,7 +33,24 @@
     display: flex;
     flex-direction: column;
     max-width: 50vw;
+    padding: 20px;
     width: 100%;
     background-color: yellow;
+}
 
+.register_form input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.register_form button{
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.register_form_p{
+    text-align: center;
 }
